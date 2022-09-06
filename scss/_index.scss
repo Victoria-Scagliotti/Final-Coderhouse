@@ -1,0 +1,55 @@
+.portada {
+    background-image: url("../img/principal.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: portada;
+    display: flex;
+    align-items:flex-end;
+    margin-top: 17px;
+    height: 80vh;
+    width: 100%;
+    font-size: 3rem;
+}
+
+.primerSeccion {
+    background: $cajas-portada;
+    grid-area: seccionA;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #896065 1px solid;
+    h2{
+    margin: 2px;
+    padding: 2px;
+    text-decoration-line: underline;}
+}
+
+.segundaSeccion {
+    background: $cajas-portada;
+    grid-area: seccionB;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #896065 1px solid;
+    h2{
+    margin: 2px;
+    padding: 2px;
+    text-decoration-line: underline;}
+}
+
+.terceraSeccion {
+    background: $cajas-portada;
+    grid-area: seccionC;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #896065 1px solid;
+    h2{
+    margin: 2px;
+    padding: 2px;
+    text-decoration-line: underline;}
+}

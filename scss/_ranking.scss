@@ -1,0 +1,25 @@
+.rangos{
+    grid-area: rangos;
+    width: 100%;
+    height: fit-content;
+}
+
+.jugadores{
+    grid-area: jugadores;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $cajas-ranking;
+    height: 200px;
+    width: 100%;
+}
+
+.equipos{
+    grid-area: equipos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $cajas-ranking;
+    height: 200px;
+    width: 100%;
+}
