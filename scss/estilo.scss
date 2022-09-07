@@ -38,6 +38,7 @@ h2 {
 footer {
     background-color: black;
     color: white;
+    font-size: 13px;
     grid-area: footer;
     height: 50px;
     display: flex;
@@ -70,7 +71,7 @@ footer {
         "footer footer";
         gap: 20px;
     }
-
+    
     .gridPadreGaleria{
         display: grid;
         grid-template-areas: 
@@ -94,7 +95,7 @@ footer {
         "footer footer footer";
         gap: 20px;
     }
-
+    
     .gridPadreRanking{
         display: grid;
         grid-template-areas: 
@@ -104,6 +105,9 @@ footer {
         "jugadores equipos"
         "footer footer";
         gap: 50px;
+        .rangos{
+            margin-top: 1px;
+        }
     }
 
     .gridPadreGaleria{

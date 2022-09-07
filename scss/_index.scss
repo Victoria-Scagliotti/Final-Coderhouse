@@ -6,7 +6,7 @@
     grid-area: portada;
     display: flex;
     align-items:flex-end;
-    margin-top: 17px;
+    margin-top: 50px;
     height: 80vh;
     width: 100%;
     font-size: 3rem;
@@ -15,11 +15,7 @@
 .primerSeccion {
     background: $cajas-portada;
     grid-area: seccionA;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: #896065 1px solid;
+    @include cajasIndex;
     h2{
     margin: 2px;
     padding: 2px;
@@ -29,11 +25,7 @@
 .segundaSeccion {
     background: $cajas-portada;
     grid-area: seccionB;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: #896065 1px solid;
+    @include cajasIndex;
     h2{
     margin: 2px;
     padding: 2px;
@@ -43,11 +35,7 @@
 .terceraSeccion {
     background: $cajas-portada;
     grid-area: seccionC;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: #896065 1px solid;
+    @include cajasIndex;
     h2{
     margin: 2px;
     padding: 2px;

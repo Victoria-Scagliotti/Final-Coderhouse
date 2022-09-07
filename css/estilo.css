@@ -1,3 +1,18 @@
+.Instagram {
+  color: purple; }
+
+.Facebook {
+  color: blue; }
+
+.Twitter {
+  color: lightblue; }
+
+.Youtube {
+  color: red; }
+
+.Discord {
+  color: violet; }
+
 .portada {
   background-image: url("../img/principal.jpg");
   background-position: center;
@@ -6,7 +21,7 @@
   grid-area: portada;
   display: flex;
   align-items: flex-end;
-  margin-top: 17px;
+  margin-top: 50px;
   height: 80vh;
   width: 100%;
   font-size: 3rem; }
@@ -53,7 +68,8 @@
 .rangos {
   grid-area: rangos;
   width: 100%;
-  height: fit-content; }
+  height: fit-content;
+  margin-top: 10%; }
 
 .jugadores {
   grid-area: jugadores;
@@ -81,7 +97,7 @@
   grid-area: menuGaleria;
   display: flex;
   justify-content: center;
-  margin-top: 17px;
+  margin-top: 50px;
   font-size: 2rem;
   height: 80vh;
   width: 100%; }
@@ -108,26 +124,16 @@
   width: auto;
   height: 500px; }
 
-.tecnologia {
-  border: #896065 1px solid;
-  background: linear-gradient(to top, bisque, #70ccb0);
-  height: 200px; }
-
-.indumentaria {
-  border: #896065 1px solid;
-  background: linear-gradient(to top, bisque, #70ccb0);
-  height: 200px; }
-
-.utensillos {
-  background: linear-gradient(to top, bisque, #70ccb0);
-  border: #896065 1px solid;
-  height: 200px; }
-
 .partesMercado {
   display: flex;
   margin-top: 30vh;
   margin-bottom: 20vh;
   justify-content: center; }
+
+.tecnologia, .indumentaria, .utensillos {
+  border: #896065 1px solid;
+  background: linear-gradient(to top, bisque, #70ccb0);
+  height: 200px; }
 
 .redes {
   grid-area: redes;
@@ -137,8 +143,18 @@
   align-items: center;
   border: #896065 3px solid;
   background-color: #fad0d0;
-  margin-top: 60px;
+  margin-top: 90px;
   margin-bottom: 30px; }
+  .redes .Instagram {
+    color: purple; }
+  .redes .Facebook {
+    color: blue; }
+  .redes .Twitter {
+    color: lightblue; }
+  .redes .Youtube {
+    color: red; }
+  .redes .Discord {
+    color: violet; }
 
 .formulario {
   border: #896065 3px solid;
@@ -177,6 +193,7 @@ h2 {
 footer {
   background-color: black;
   color: white;
+  font-size: 13px;
   grid-area: footer;
   height: 50px;
   display: flex;
@@ -195,27 +212,7 @@ footer {
   .gridPadreGaleria {
     display: grid;
     grid-template-areas: "header header" "menuGaleria menuGaleria" "videos videos" "imagenes imagenes" "footer footer";
-    gap: 20px; }
-  /*.gridPadreMercado{
-        display: grid;
-        grid-template-areas: 
-        "header header"
-        "tecnologia tecnologia"
-        "indumentaria indumentaria"
-        "utensillos utensillos"
-        "footer footer";
-        gap: 20px;
-    }*/
-  /*.gridPadreContacto{
-        display: grid;
-        grid-template-areas: 
-        "header header"
-        "nav nav"
-        "redes redes"
-        "form form"
-        "footer footer";
-        gap: 20px;
-    }*/ }
+    gap: 20px; } }
 
 @media (min-width: 1024px) {
   .gridPadreIndex {
@@ -226,27 +223,9 @@ footer {
     display: grid;
     grid-template-areas: "header header" "nav nav" "rangos rangos" "jugadores equipos" "footer footer";
     gap: 50px; }
+    .gridPadreRanking .rangos {
+      margin-top: 1px; }
   .gridPadreGaleria {
     display: grid;
     grid-template-areas: "header header" "nav nav" "menuGaleria menuGaleria" "videos imagenes" "footer footer";
-    gap: 20px; }
-  /*.gridPadreMercado{
-        display: grid;
-        grid-template-areas: 
-        "header header"
-        "nav nav"
-        "tecnologia tecnologia"
-        "indumentaria utensillos"
-        "footer footer";
-        gap: 20px;
-    }*/
-  /*.gridPadreContacto{
-        display: grid;
-        grid-template-areas: 
-        "header header"
-        "nav nav"
-        "redes form"
-        "redes form"
-        "footer footer";
-        gap: 20px;
-    }*/ }
+    gap: 20px; } }
