@@ -1,69 +1,44 @@
-.Instagram {
-  color: purple; }
-
-.Facebook {
-  color: blue; }
-
-.Twitter {
-  color: lightblue; }
-
-.Youtube {
-  color: red; }
-
-.Discord {
-  color: violet; }
-
-.portada {
-  background-image: url("../img/principal.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  grid-area: portada;
-  display: flex;
-  align-items: flex-end;
-  margin-top: 50px;
-  height: 80vh;
-  width: 100%;
-  font-size: 3rem; }
-
 .primerSeccion {
-  background: linear-gradient(to top, bisque, #e4909a);
+  background: linear-gradient(to top, black, #363636);
   grid-area: seccionA;
+  color: white;
   height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: #896065 1px solid; }
+  border: black 1px solid; }
   .primerSeccion h2 {
     margin: 2px;
-    padding: 2px;
-    text-decoration-line: underline; }
+    padding: 2px; }
 
 .segundaSeccion {
-  background: linear-gradient(to top, bisque, #e4909a);
+  background: linear-gradient(to top, black, #363636);
   grid-area: seccionB;
+  color: white;
   height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: #896065 1px solid; }
+  border: black 1px solid; }
   .segundaSeccion h2 {
     margin: 2px;
-    padding: 2px;
-    text-decoration-line: underline; }
+    padding: 2px; }
 
 .terceraSeccion {
-  background: linear-gradient(to top, bisque, #e4909a);
+  background: linear-gradient(to top, black, #363636);
   grid-area: seccionC;
+  color: white;
   height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: #896065 1px solid; }
+  border: black 1px solid; }
   .terceraSeccion h2 {
     margin: 2px;
-    padding: 2px;
-    text-decoration-line: underline; }
+    padding: 2px; }
+
+.contenidoRanking {
+  background-image: url("../img/77fb54c2f3f5901c69b8082111873af7.jpg"); }
 
 .rangos {
   grid-area: rangos;
@@ -89,16 +64,7 @@
   height: 200px;
   width: 100%; }
 
-.menuGaleria {
-  background-image: url(../img/galeria.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  grid-area: menuGaleria;
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  font-size: 2rem;
+.carouselGaleria {
   height: 80vh;
   width: 100%; }
 
@@ -145,16 +111,6 @@
   background-color: #fad0d0;
   margin-top: 90px;
   margin-bottom: 30px; }
-  .redes .Instagram {
-    color: purple; }
-  .redes .Facebook {
-    color: blue; }
-  .redes .Twitter {
-    color: lightblue; }
-  .redes .Youtube {
-    color: red; }
-  .redes .Discord {
-    color: violet; }
 
 .formulario {
   border: #896065 3px solid;
@@ -217,7 +173,7 @@ footer {
 @media (min-width: 1024px) {
   .gridPadreIndex {
     display: grid;
-    grid-template-areas: "header header header" "nav nav nav" "portada portada portada" "seccionA seccionB seccionC" "footer footer footer";
+    grid-template-areas: "header header header" "nav nav nav" "carouselIndex carouselIndex carouselIndex" "seccionA seccionB seccionC" "footer footer footer";
     gap: 20px; }
   .gridPadreRanking {
     display: grid;

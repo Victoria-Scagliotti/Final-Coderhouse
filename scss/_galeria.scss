@@ -1,13 +1,4 @@
-.menuGaleria{
-    background-image: url(../img/galeria.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    grid-area: menuGaleria;
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    font-size: 2rem;
+.carouselGaleria{
     height: 80vh;
     width: 100%;
 }
