@@ -1,24 +1,26 @@
-.redes{
+.gridPadreContacto {
+    background-color: black;
+  .redes {
     grid-area: redes;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: #896065 3px solid;
+    border: black 3px solid;
     background-color: $cajas-contacto;
     margin-top: 90px;
     margin-bottom: 30px;
-}
+  }
 
-.formulario{
-    border: #896065 3px solid;
+  .formulario {
+    border: black 3px solid;
     background-color: $cajas-contacto;
     margin-top: 50px;
     margin-bottom: 50px;
     padding: 20px;
-}
-
-.tituloForm{
-    margin-top: 15px;
-    margin-bottom: 35px;
+    .tituloForm {
+      margin-top: 15px;
+      margin-bottom: 35px;
+    }
+  }
 }

@@ -1,29 +1,39 @@
-.primerSeccion {
+.gridPadreIndex {
+
+  .carouselIndex {
+    margin-top: 60px;
+  }
+
+  .primerSeccion {
     background: $cajas-portada;
     grid-area: seccionA;
     @include cajasIndex;
-    h2{
-    margin: 2px;
-    padding: 2px;
-    }
-}
 
-.segundaSeccion {
+    h2 {
+      margin: 2px;
+      padding: 2px;
+    }
+  }
+
+  .segundaSeccion {
     background: $cajas-portada;
     grid-area: seccionB;
     @include cajasIndex;
-    h2{
-    margin: 2px;
-    padding: 2px;
-    }
-}
 
-.terceraSeccion {
+    h2 {
+      margin: 2px;
+      padding: 2px;
+    }
+  }
+
+  .terceraSeccion {
     background: $cajas-portada;
     grid-area: seccionC;
     @include cajasIndex;
-    h2{
-    margin: 2px;
-    padding: 2px;
+    
+    h2 {
+      margin: 2px;
+      padding: 2px;
     }
+  }
 }

@@ -58,7 +58,6 @@ footer {
         "seccionC seccionC"
         "footer footer"
         ;
-        gap: 20px;
     }
 
     .gridPadreRanking{
@@ -89,11 +88,9 @@ footer {
         display: grid;
         grid-template-areas: 
         "header header header"
-        "nav nav nav"
         "carouselIndex carouselIndex carouselIndex"
         "seccionA seccionB seccionC"
         "footer footer footer";
-        gap: 20px;
     }
     
     .gridPadreRanking{

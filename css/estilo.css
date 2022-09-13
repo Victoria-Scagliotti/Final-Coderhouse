@@ -1,39 +1,45 @@
-.primerSeccion {
+.gridPadreIndex .carouselIndex {
+  margin-top: 60px; }
+
+.gridPadreIndex .primerSeccion {
   background: linear-gradient(to top, black, #363636);
   grid-area: seccionA;
   color: white;
+  width: 400px;
   height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: black 1px solid; }
-  .primerSeccion h2 {
+  .gridPadreIndex .primerSeccion h2 {
     margin: 2px;
     padding: 2px; }
 
-.segundaSeccion {
+.gridPadreIndex .segundaSeccion {
   background: linear-gradient(to top, black, #363636);
   grid-area: seccionB;
   color: white;
+  width: 400px;
   height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: black 1px solid; }
-  .segundaSeccion h2 {
+  .gridPadreIndex .segundaSeccion h2 {
     margin: 2px;
     padding: 2px; }
 
-.terceraSeccion {
+.gridPadreIndex .terceraSeccion {
   background: linear-gradient(to top, black, #363636);
   grid-area: seccionC;
   color: white;
+  width: 400px;
   height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: black 1px solid; }
-  .terceraSeccion h2 {
+  .gridPadreIndex .terceraSeccion h2 {
     margin: 2px;
     padding: 2px; }
 
@@ -101,27 +107,27 @@
   background: linear-gradient(to top, bisque, #70ccb0);
   height: 200px; }
 
-.redes {
-  grid-area: redes;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: #896065 3px solid;
-  background-color: #fad0d0;
-  margin-top: 90px;
-  margin-bottom: 30px; }
-
-.formulario {
-  border: #896065 3px solid;
-  background-color: #fad0d0;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding: 20px; }
-
-.tituloForm {
-  margin-top: 15px;
-  margin-bottom: 35px; }
+.gridPadreContacto {
+  background-color: black; }
+  .gridPadreContacto .redes {
+    grid-area: redes;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: black 3px solid;
+    background-color: linear-gradient(to top, black, #363636);
+    margin-top: 90px;
+    margin-bottom: 30px; }
+  .gridPadreContacto .formulario {
+    border: black 3px solid;
+    background-color: linear-gradient(to top, black, #363636);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px; }
+    .gridPadreContacto .formulario .tituloForm {
+      margin-top: 15px;
+      margin-bottom: 35px; }
 
 * {
   margin: 0;
@@ -159,8 +165,7 @@ footer {
 @media (min-width: 368px) {
   .gridPadreIndex {
     display: grid;
-    grid-template-areas: "header header" "portada portada" "seccionA seccionA" "seccionB seccionB" "seccionC seccionC" "footer footer";
-    gap: 20px; }
+    grid-template-areas: "header header" "portada portada" "seccionA seccionA" "seccionB seccionB" "seccionC seccionC" "footer footer"; }
   .gridPadreRanking {
     display: grid;
     grid-template-areas: "header header" "rangos rangos" "jugadores jugadores" "equipos equipos" "footer footer";
@@ -173,8 +178,7 @@ footer {
 @media (min-width: 1024px) {
   .gridPadreIndex {
     display: grid;
-    grid-template-areas: "header header header" "nav nav nav" "carouselIndex carouselIndex carouselIndex" "seccionA seccionB seccionC" "footer footer footer";
-    gap: 20px; }
+    grid-template-areas: "header header header" "carouselIndex carouselIndex carouselIndex" "seccionA seccionB seccionC" "footer footer footer"; }
   .gridPadreRanking {
     display: grid;
     grid-template-areas: "header header" "nav nav" "rangos rangos" "jugadores equipos" "footer footer";
