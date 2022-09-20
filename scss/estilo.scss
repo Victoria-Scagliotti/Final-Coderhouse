@@ -20,6 +20,11 @@ a{
     color: black;
 }
 
+header{
+    height: 10vh;
+    width: 100vh;
+}
+
 @keyframes texto {
     0% {
         opacity: 0;
@@ -46,18 +51,21 @@ footer {
     align-items: center;
 }
 
-@media (min-width: 368px) {
+@media (min-width: 350px){
 
     .gridPadreIndex {
         display: grid;
-        grid-template-areas: 
-        "header header"
-        "portada portada"
-        "seccionA seccionA"
-        "seccionB seccionB"
-        "seccionC seccionC"
-        "footer footer"
+        grid-template-areas:
+        "carousel"
+        "seccionA"
+        "seccionB"
+        "seccionC"
+        "footer"
         ;
+        .carouselIndex{
+            margin-top: 60px;
+            height: 60vh;
+        }
     }
 
     .gridPadreRanking{
@@ -83,14 +91,58 @@ footer {
     }
 }
 
-@media (min-width:1024px) {
+@media (min-width:768px) {
+    .gridPadreIndex {
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "carousel carousel"
+        "seccionA seccionB 
+        seccionC seccionC"
+        "footer footer";
+        .carouselIndex{
+            margin-top: 60px;
+        }
+    }
+    
+    .gridPadreRanking{
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "rangos rangos"
+        "jugadores equipos"
+        "footer footer";
+        gap: 50px;
+        .rangos{
+            margin-top: 1px;
+        }
+    }
+
+    .gridPadreGaleria{
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "menuGaleria menuGaleria"
+        "videos imagenes"
+        "footer footer";
+        gap: 20px;
+    }
+}
+
+@media (min-width:1000px) {
     .gridPadreIndex {
         display: grid;
         grid-template-areas: 
         "header header header"
-        "carouselIndex carouselIndex carouselIndex"
+        "carousel carousel carousel"
         "seccionA seccionB seccionC"
         "footer footer footer";
+
+        .carouselIndex{
+            margin-top: 0px;
+        }
     }
     
     .gridPadreRanking{

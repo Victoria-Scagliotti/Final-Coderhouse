@@ -1,15 +1,11 @@
 $cajas-portada: linear-gradient(to top, rgb(0, 0, 0), #363636);
-$cajas-ranking: bisque;
 $cajas-galeria: linear-gradient(to left, bisque, #97b3ff);
-$cajas-mercado: linear-gradient(to top, bisque, #70ccb0);
+$cajas-mercado: linear-gradient(to top, rgb(0, 0, 0), #363636);
 $cajas-contacto: linear-gradient(to top, rgb(0, 0, 0), #363636);
 
 //MIXIN
 @mixin cajasIndex{
     color: white;
-    width: 400px;
-    height: 500px;
-    display: flex;
     align-items: center;
     justify-content: center;
     border: black 1px solid;

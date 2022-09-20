@@ -1,26 +1,30 @@
 .gridPadreContacto {
-    background-color: black;
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0), #363636);
+  color: whitesmoke;
   .redes {
     grid-area: redes;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: black 3px solid;
-    background-color: $cajas-contacto;
-    margin-top: 90px;
+    margin-top: 100px;
     margin-bottom: 30px;
+    a{
+      color: rgb(255, 74, 144);
+    }
   }
 
   .formulario {
-    border: black 3px solid;
-    background-color: $cajas-contacto;
     margin-top: 50px;
     margin-bottom: 50px;
     padding: 20px;
     .tituloForm {
       margin-top: 15px;
       margin-bottom: 35px;
+    }
+    .btn-color{
+      background-color: rgb(255, 74, 144);
+      ;
     }
   }
 }

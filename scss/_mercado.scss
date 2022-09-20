@@ -1,20 +1,30 @@
-.partesMercado{
+.gridPadreMercado {
+  background-color: black;
+  h1{
+    color: whitesmoke;
+    margin-bottom: 20px
+  };
+  .partesMercado {
     display: flex;
-    margin-top: 30vh;
+    margin-top: 20vh;
     margin-bottom: 20vh;
     justify-content: center;
-}
+    h2{
+      color:rgb(255, 74, 144);
+    }
+  }
 
-.tecnologia{
-    border: #896065 1px solid;
+  .tecnologia {
+    height: 300px;
+    width: max-content;
     background: $cajas-mercado;
-    height: 200px;
-}
+  }
 
-.indumentaria{
-   @extend .tecnologia;
-}
+  .indumentaria {
+    @extend .tecnologia;
+  }
 
-.utensillos{
-   @extend .tecnologia;
+  .utensillos {
+    @extend .tecnologia;
+  }
 }
