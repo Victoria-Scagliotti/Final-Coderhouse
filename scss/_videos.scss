@@ -4,6 +4,7 @@
     height: 80vh;
     width: 100%;
 }
+}
 
 .videos{
     grid-area: videos;
@@ -14,16 +15,4 @@
     background-image: linear-gradient(to left, rgb(0, 0, 0), #363636);
     height: 500px;
     width: 100%;
-}
-
-.imagenes{
-    grid-area: imagenes;
-    background-image: linear-gradient(to right, rgb(0, 0, 0), #363636);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: 500px;
-}
 }
