@@ -1,17 +1,13 @@
 .gridPadreRanking {
   background-color: black;
   display: grid;
-  h1{
-    color: whitesmoke;
-    margin-top: 30px;
-  }
   
   .rangos {
     grid-area: rangos;
     width: 100%;
-    height: fit-content;
+    height: 90vh;
     h1 {
-      color: whitesmoke;
+      color: palevioletred;
       margin-bottom: 30px;
     }
   }
@@ -21,9 +17,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 15vh;
     background-image: linear-gradient(to top, rgb(0, 0, 0), #363636);
+    margin-bottom: 10px;
     a {
-        color: rgb(255, 74, 144);
+        color: palevioletred;
         font-size: 20px;
     }
   }

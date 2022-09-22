@@ -36,30 +36,29 @@
 .gridPadreRanking {
   background-color: black;
   display: grid; }
-  .gridPadreRanking h1 {
-    color: whitesmoke;
-    margin-top: 30px; }
   .gridPadreRanking .rangos {
     grid-area: rangos;
     width: 100%;
-    height: fit-content; }
+    height: 90vh; }
     .gridPadreRanking .rangos h1 {
-      color: whitesmoke;
+      color: palevioletred;
       margin-bottom: 30px; }
   .gridPadreRanking .jugadores, .gridPadreRanking .equipos {
     grid-area: jugadores;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to top, black, #363636); }
+    height: 15vh;
+    background-image: linear-gradient(to top, black, #363636);
+    margin-bottom: 10px; }
     .gridPadreRanking .jugadores a, .gridPadreRanking .equipos a {
-      color: #ff4a90;
+      color: palevioletred;
       font-size: 20px; }
   .gridPadreRanking .equipos {
     grid-area: equipos; }
 
 .gridPadreGaleria {
-  background-color: black; }
+  background-image: linear-gradient(to bottom, black, #363636); }
   .gridPadreGaleria .carouselGaleria {
     height: 80vh;
     width: 100%; }
@@ -74,22 +73,27 @@
   height: 500px;
   width: 100%; }
 
-.gridPadreMercado {
-  background-color: black; }
-  .gridPadreMercado h1 {
-    color: whitesmoke;
-    margin-bottom: 20px; }
-  .gridPadreMercado .partesMercado {
+.bodyImagenes {
+  background-image: linear-gradient(to bottom, black, #363636); }
+  .bodyImagenes h1 {
+    color: palevioletred;
+    margin-top: 15vh;
+    margin-bottom: 30px; }
+  .bodyImagenes .contenedorImagenes {
     display: flex;
-    margin-top: 20vh;
-    margin-bottom: 20vh;
-    justify-content: center; }
-    .gridPadreMercado .partesMercado h2 {
-      color: #ff4a90; }
-  .gridPadreMercado .tecnologia, .gridPadreMercado .indumentaria, .gridPadreMercado .utensillos {
-    height: 300px;
-    width: max-content;
-    background: linear-gradient(to top, black, #363636); }
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin: 30px; }
+    .bodyImagenes .contenedorImagenes .card {
+      margin: 20px;
+      background-color: #ffccf7;
+      color: black;
+      font-weight: bold; }
+    .bodyImagenes .contenedorImagenes .card-img-top {
+      height: 600px; }
 
 .gridPadreContacto {
   background-image: linear-gradient(to bottom, black, #363636);
@@ -102,8 +106,10 @@
     align-items: center;
     margin-top: 100px;
     margin-bottom: 30px; }
+    .gridPadreContacto .redes ul {
+      padding-left: 0; }
     .gridPadreContacto .redes a {
-      color: #ff4a90; }
+      color: palevioletred; }
   .gridPadreContacto .formulario {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -112,7 +118,7 @@
       margin-top: 15px;
       margin-bottom: 35px; }
     .gridPadreContacto .formulario .btn-color {
-      background-color: #ff4a90; }
+      background-color: palevioletred; }
 
 * {
   margin: 0;
