@@ -22,7 +22,28 @@ a{
 
 header{
     height: 10vh;
-    width: 100vh;
+    width: max-content;
+    .menuLogo{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-left: 20px;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+    .menuPartes{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    #navbarNavAltMarkup{
+        a{
+          color: palevioletred;
+          font-size: 1rem;
+          margin-left: 20px;
+          margin-right: 20px;
+          font-weight: bold;
+        }
+    }
 }
 
 @keyframes texto {
@@ -143,6 +164,7 @@ footer {
         .carouselIndex{
             margin-top: 0px;
         }
+        
     }
     
     .gridPadreRanking{

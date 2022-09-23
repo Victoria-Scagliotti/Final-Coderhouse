@@ -134,7 +134,23 @@ a {
 
 header {
   height: 10vh;
-  width: 100vh; }
+  width: max-content; }
+  header .menuLogo {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: 20px;
+    font-size: 1.5rem;
+    text-transform: uppercase; }
+  header .menuPartes {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; }
+  header #navbarNavAltMarkup a {
+    color: palevioletred;
+    font-size: 1rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: bold; }
 
 @keyframes texto {
   0% {
