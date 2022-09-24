@@ -9,7 +9,7 @@
       content="La mejor Fan Page de tu shooter favorito, hecho por fans para los fans, VALORANT."
     />
     <title>NiFanáticos.VALORANT</title>
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon"/>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -23,35 +23,39 @@
     <link rel="stylesheet" href="css/estilo.css" />
   </head>
 
-  <body class="gridPadreIndex">
+  <body class="padreIndex">
 
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-          <div class="menuLogo">
-            <a class="navbar-brand" href="#">Ni  Fanáticos</a>
-            <img src="img/logo.png" alt="logo" width="50vh" height="50vh" />
-          </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <a class="navbar-brand" href="#">NI FANÁTICOS</a>
+          <img src="img/logo.png" alt="logo" width="50vh" height="50vh" />
+          <button class="navbar-toggler botonHamburguesa" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="menuPartes">
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav menuPartes">
-                <a class="nav-link" href="index.html">INICIO</a>
-                <a class="nav-link" href="pags/ranking.html">RANKING</a>
-                <a class="nav-link" href="pags/videos.html">VIDEOS</a>
-                <a class="nav-link" href="pags/imagenes.html">IMAGENES</a>
-                <a class="nav-link" href="pags/contacto.html">CONTACTO</a>
-              </div>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENÚ</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pags/ranking.html">Ranking</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pags/videos.html">Videos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pags/imagenes.html">Imagenes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pags/contacto.html">Contacto</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -91,7 +95,7 @@
             <div class="carousel-caption d-none d-md-block">
               <h5>Killjoy</h5>
               <p>
-                Some representative placeholder content for the first slide.
+                Killjoy, la prodigio de Berlín, asegura fácilmente el campo de batalla con un arsenal de dispositivos. Si el daño que inflige su equipamiento no detiene a sus enemigos, la debilitación de sus robots la ayudarán a aniquilarlos.
               </p>
             </div>
           </div>
@@ -100,7 +104,7 @@
             <div class="carousel-caption d-none d-md-block">
               <h5>Yoru</h5>
               <p>
-                Some representative placeholder content for the second slide.
+                El nativo de Japón, Yoru, fractura la realidad para infiltrarse en las líneas enemigas sin ser visto. Con engaños y agresividad por igual, sorprende a sus objetivos antes de que sepan dónde buscarlo.
               </p>
             </div>
           </div>
@@ -109,7 +113,7 @@
             <div class="carousel-caption d-none d-md-block">
               <h5>Raze</h5>
               <p>
-                Some representative placeholder content for the third slide.
+                Raze llega de Brasil con su explosiva personalidad y sus grandes armas. Gracias a su contundente estilo de juego, es muy buena para separar los enemigos atrincherados y para despejar espacios estrechos con una gran cantidad de explosiones.
               </p>
             </div>
           </div>
@@ -134,68 +138,82 @@
     </section>
 
     <secion class="cajasIndex">
-      <section class="primerSeccion">
-        <h2>AGENTES</h2>
-        <ul>
-          <li>Chamber</li>
-          <li>Sage</li>
-          <li>Reyna</li>
-          <li>Skye</li>
-          <li>Jett</li>
-          <li>Yoru</li>
-          <li>Kay/o</li>
-          <li>Sova</li>
-          <li>Phoenix</li>
-          <li>Viper</li>
-          <li>Cypher</li>
-          <li>Fade</li>
-          <li>Breach</li>
-          <li>Brimstone</li>
-          <li>Omen</li>
-          <li>Killjoy</li>
-          <li>Astra</li>
-          <li>Raze</li>
-          <li>Neon</li>
-        </ul>
-      </section>
-      
-      <section class="segundaSeccion">
-        <h2>MAPAS</h2>
-        <ul>
-          <li>Pearl</li>
-          <li>Fracture</li>
-          <li>Ascent</li>
-          <li>Breeze</li>
-          <li>Split</li>
-          <li>Icebox</li>
-          <li>Bind</li>
-          <li>Haven</li>
-        </ul>
-      </section>
-      
-      <section class="terceraSeccion">
-        <h2>ARSENAL</h2>
-        <ul>
-          <li>Classic</li>
-          <li>Phantom</li>
-          <li>Judge</li>
-          <li>Ghost</li>
-          <li>Vandal</li>
-          <li>Bulldog</li>
-          <li>Odin</li>
-          <li>Guardian</li>
-          <li>Sheriff</li>
-          <li>Stinger</li>
-          <li>Operator</li>
-          <li>Shorty</li>
-          <li>Frenzy</li>
-          <li>Spectre</li>
-          <li>Bucky</li>
-          <li>Marshal</li>
-          <li>Ares</li>
-          <li>Cuchillo Táctico</li>
-        </ul>
-      </section>
+
+      <div class="card primerSeccion" style="width: 18rem">
+        <div class="card-body">
+          <p class="card-text">
+            <h2>AGENTES</h2>
+            <ul>
+              <li>Chamber</li>
+              <li>Sage</li>
+              <li>Reyna</li>
+              <li>Skye</li>
+              <li>Jett</li>
+              <li>Yoru</li>
+              <li>Kay/o</li>
+              <li>Sova</li>
+              <li>Phoenix</li>
+              <li>Viper</li>
+              <li>Cypher</li>
+              <li>Fade</li>
+              <li>Breach</li>
+              <li>Brimstone</li>
+              <li>Omen</li>
+              <li>Killjoy</li>
+              <li>Astra</li>
+              <li>Raze</li>
+              <li>Neon</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="card segundaSeccion" style="width: 18rem">
+        <div class="card-body">
+          <p class="card-text">
+            <h2>MAPAS</h2>
+            <ul>
+              <li>Pearl</li>
+              <li>Fracture</li>
+              <li>Ascent</li>
+              <li>Breeze</li>
+              <li>Split</li>
+              <li>Icebox</li>
+              <li>Bind</li>
+              <li>Haven</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="card terceraSeccion" style="width: 18rem">
+        <div class="card-body">
+          <p class="card-text">
+            <h2>ARSENAL</h2>
+            <ul>
+              <li>Classic</li>
+              <li>Phantom</li>
+              <li>Judge</li>
+              <li>Ghost</li>
+              <li>Vandal</li>
+              <li>Bulldog</li>
+              <li>Odin</li>
+              <li>Guardian</li>
+              <li>Sheriff</li>
+              <li>Stinger</li>
+              <li>Operator</li>
+              <li>Shorty</li>
+              <li>Frenzy</li>
+              <li>Spectre</li>
+              <li>Bucky</li>
+              <li>Marshal</li>
+              <li>Ares</li>
+              <li>Cuchillo Táctico</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
     </secion>
 
     <footer class="bg-gradient">

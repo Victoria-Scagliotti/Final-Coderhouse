@@ -23,35 +23,39 @@
     <link rel="stylesheet" href="../css/estilo.css" />
   </head>
 
-  <body class="gridPadreGaleria">
+  <body class="padreVideos">
 
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-          <div class="menuLogo">
-            <a class="navbar-brand" href="/index.html">Ni  Fanáticos</a>
-            <img src="/img/logo.png" alt="logo" width="50vh" height="50vh" />
-          </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <a class="navbar-brand" href="/index.html">NI FANÁTICOS</a>
+          <img src="/img/logo.png" alt="logo" width="50vh" height="50vh" />
+          <button class="navbar-toggler botonHamburguesa" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="menuPartes">
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav menuPartes">
-                <a class="nav-link" href="../index.html">INICIO</a>
-                <a class="nav-link" href="ranking.html">RANKING</a>
-                <a class="nav-link" href="videos.html">VIDEOS</a>
-                <a class="nav-link" href="imagenes.html">IMAGENES</a>
-                <a class="nav-link" href="contacto.html">CONTACTO</a>
-              </div>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENÚ</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="/index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="ranking.html">Ranking</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="videos.html">Videos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="imagenes.html">Imagenes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

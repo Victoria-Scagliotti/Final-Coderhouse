@@ -5,8 +5,15 @@ $cajas-contacto: linear-gradient(to top, rgb(0, 0, 0), #363636);
 
 //MIXIN
 @mixin cajasIndex{
+    margin-right: 30px;
+    margin-left: 30px;
     color: white;
-    align-items: center;
-    justify-content: center;
-    border: black 1px solid;
+    h2{
+        color: palevioletred;
+        margin-bottom: 30px;
+        padding: 2px;
+    }
+    ul{
+        padding: 0;
+    }
 }

@@ -1,37 +1,52 @@
-.gridPadreIndex {
-  background-color: black; }
-  .gridPadreIndex .carouselIndex {
-    grid-area: carousel; }
-  .gridPadreIndex .primerSeccion {
+.padreIndex {
+  background-color: black;
+  display: flex;
+  flex-direction: column; }
+  .padreIndex .carouselIndex h5 {
+    color: palevioletred; }
+  .padreIndex .cajasIndex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 60px 0px 130px 0px; }
+  .padreIndex .primerSeccion {
     background: linear-gradient(to top, black, #363636);
-    grid-area: seccionA;
+    margin-right: 30px;
+    margin-left: 30px;
     color: white;
-    align-items: center;
-    justify-content: center;
-    border: black 1px solid; }
-    .gridPadreIndex .primerSeccion h2 {
-      margin: 2px;
+    margin-bottom: 70px; }
+    .padreIndex .primerSeccion h2 {
+      color: palevioletred;
+      margin-bottom: 30px;
       padding: 2px; }
-  .gridPadreIndex .segundaSeccion {
+    .padreIndex .primerSeccion ul {
+      padding: 0; }
+  .padreIndex .segundaSeccion {
     background: linear-gradient(to top, black, #363636);
-    grid-area: seccionB;
+    margin-right: 30px;
+    margin-left: 30px;
     color: white;
-    align-items: center;
-    justify-content: center;
-    border: black 1px solid; }
-    .gridPadreIndex .segundaSeccion h2 {
-      margin: 2px;
+    margin-bottom: 70px; }
+    .padreIndex .segundaSeccion h2 {
+      color: palevioletred;
+      margin-bottom: 30px;
       padding: 2px; }
-  .gridPadreIndex .terceraSeccion {
+    .padreIndex .segundaSeccion ul {
+      padding: 0; }
+  .padreIndex .terceraSeccion {
     background: linear-gradient(to top, black, #363636);
-    grid-area: seccionC;
+    margin-right: 30px;
+    margin-left: 30px;
     color: white;
-    align-items: center;
-    justify-content: center;
-    border: black 1px solid; }
-    .gridPadreIndex .terceraSeccion h2 {
-      margin: 2px;
+    margin-bottom: 70px; }
+    .padreIndex .terceraSeccion h2 {
+      color: palevioletred;
+      margin-bottom: 30px;
       padding: 2px; }
+    .padreIndex .terceraSeccion ul {
+      padding: 0; }
 
 .gridPadreRanking {
   background-color: black;
@@ -57,11 +72,46 @@
   .gridPadreRanking .equipos {
     grid-area: equipos; }
 
-.gridPadreGaleria {
+.padreVideos {
   background-image: linear-gradient(to bottom, black, #363636); }
-  .gridPadreGaleria .carouselGaleria {
-    height: 80vh;
-    width: 100%; }
+  .padreVideos .contenedorVideos {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 10vh 30px 130px 30px;
+    justify-content: space-between; }
+    .padreVideos .contenedorVideos h1 {
+      color: palevioletred;
+      margin-top: 10vh;
+      margin-bottom: 100px; }
+    .padreVideos .contenedorVideos h2 {
+      color: palevioletred;
+      font-size: 1.5rem; }
+    .padreVideos .contenedorVideos h3 {
+      font-size: 1rem; }
+    .padreVideos .contenedorVideos .videoOficial {
+      display: flex;
+      flex-direction: row-reverse;
+      margin-bottom: 130px; }
+      .padreVideos .contenedorVideos .videoOficial .tituloVideoOf {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin-left: 40px; }
+    .padreVideos .contenedorVideos .videoFans {
+      display: flex;
+      flex-direction: row; }
+      .padreVideos .contenedorVideos .videoFans .tituloVideoF {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin-right: 40px; }
+      .padreVideos .contenedorVideos .videoFans .playF {
+        border: #e44444 7px solid; }
 
 .videos {
   grid-area: videos;
@@ -73,52 +123,54 @@
   height: 500px;
   width: 100%; }
 
-.bodyImagenes {
+.padreImagenes {
   background-image: linear-gradient(to bottom, black, #363636); }
-  .bodyImagenes h1 {
+  .padreImagenes h1 {
     color: palevioletred;
     margin-top: 15vh;
     margin-bottom: 30px; }
-  .bodyImagenes .contenedorImagenes {
+  .padreImagenes .contenedorImagenes {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     justify-items: center;
-    margin: 30px; }
-    .bodyImagenes .contenedorImagenes .card {
+    margin: 30px 30px 130px 30px; }
+    .padreImagenes .contenedorImagenes .card {
       margin: 20px;
       background-color: #ffccf7;
       color: black;
       font-weight: bold; }
-    .bodyImagenes .contenedorImagenes .card-img-top {
+    .padreImagenes .contenedorImagenes .card-img-top {
       height: 600px; }
 
-.gridPadreContacto {
+.padreContacto {
   background-image: linear-gradient(to bottom, black, #363636);
   color: whitesmoke; }
-  .gridPadreContacto .redes {
+  .padreContacto .redes {
     grid-area: redes;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
-    margin-bottom: 30px; }
-    .gridPadreContacto .redes ul {
+    margin-top: 150px;
+    margin-bottom: 70px; }
+    .padreContacto .redes ul {
       padding-left: 0; }
-    .gridPadreContacto .redes a {
+    .padreContacto .redes a {
       color: palevioletred; }
-  .gridPadreContacto .formulario {
+  .padreContacto .formulario {
     margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 20px; }
-    .gridPadreContacto .formulario .tituloForm {
+    margin-bottom: 200px;
+    padding: 40px; }
+    .padreContacto .formulario .tituloForm {
       margin-top: 15px;
       margin-bottom: 35px; }
-    .gridPadreContacto .formulario .btn-color {
-      background-color: palevioletred; }
+    .padreContacto .formulario .btn {
+      background-color: palevioletred;
+      margin: 40px 3px 3px 3px;
+      color: white; }
 
 * {
   margin: 0;
@@ -127,30 +179,21 @@
 
 body {
   text-align: center; }
-
-a {
-  text-decoration: none;
-  color: black; }
-
-header {
-  height: 10vh;
-  width: max-content; }
-  header .menuLogo {
+  body a {
+    text-decoration: none;
+    color: black; }
+  body header .navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 10vh; }
+  body header .botonHamburguesa {
+    width: 40px;
+    height: 30px;
     display: flex;
-    flex-direction: row-reverse;
-    margin-left: 20px;
-    font-size: 1.5rem;
-    text-transform: uppercase; }
-  header .menuPartes {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end; }
-  header #navbarNavAltMarkup a {
-    color: palevioletred;
-    font-size: 1rem;
-    margin-left: 20px;
-    margin-right: 20px;
-    font-weight: bold; }
+    flex-direction: column;
+    align-items: center; }
+  body header .nav-link {
+    color: palevioletred; }
 
 @keyframes texto {
   0% {
@@ -174,51 +217,23 @@ footer {
   align-items: center; }
 
 @media (min-width: 350px) {
-  .gridPadreIndex {
-    display: grid;
-    grid-template-areas: "carousel" "seccionA" "seccionB" "seccionC" "footer"; }
-    .gridPadreIndex .carouselIndex {
-      margin-top: 60px;
-      height: 60vh; }
   .gridPadreRanking {
     display: grid;
     grid-template-areas: "header header" "rangos rangos" "jugadores jugadores" "equipos equipos" "footer footer";
-    gap: 20px; }
-  .gridPadreGaleria {
-    display: grid;
-    grid-template-areas: "header header" "menuGaleria menuGaleria" "videos videos" "imagenes imagenes" "footer footer";
     gap: 20px; } }
 
 @media (min-width: 768px) {
-  .gridPadreIndex {
-    display: grid;
-    grid-template-areas: "header header" "carousel carousel" "seccionA seccionB  seccionC seccionC" "footer footer"; }
-    .gridPadreIndex .carouselIndex {
-      margin-top: 60px; }
   .gridPadreRanking {
     display: grid;
     grid-template-areas: "header header" "nav nav" "rangos rangos" "jugadores equipos" "footer footer";
     gap: 50px; }
     .gridPadreRanking .rangos {
-      margin-top: 1px; }
-  .gridPadreGaleria {
-    display: grid;
-    grid-template-areas: "header header" "nav nav" "menuGaleria menuGaleria" "videos imagenes" "footer footer";
-    gap: 20px; } }
+      margin-top: 1px; } }
 
 @media (min-width: 1000px) {
-  .gridPadreIndex {
-    display: grid;
-    grid-template-areas: "header header header" "carousel carousel carousel" "seccionA seccionB seccionC" "footer footer footer"; }
-    .gridPadreIndex .carouselIndex {
-      margin-top: 0px; }
   .gridPadreRanking {
     display: grid;
     grid-template-areas: "header header" "nav nav" "rangos rangos" "jugadores equipos" "footer footer";
     gap: 50px; }
     .gridPadreRanking .rangos {
-      margin-top: 1px; }
-  .gridPadreGaleria {
-    display: grid;
-    grid-template-areas: "header header" "nav nav" "menuGaleria menuGaleria" "videos imagenes" "footer footer";
-    gap: 20px; } }
+      margin-top: 1px; } }

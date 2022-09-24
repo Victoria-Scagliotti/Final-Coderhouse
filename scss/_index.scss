@@ -1,40 +1,40 @@
-.gridPadreIndex {
+.padreIndex {
   background-color: black;
+  display: flex;
+  flex-direction: column;
 
   .carouselIndex {
-    grid-area: carousel;
+    h5{
+      color: palevioletred;
+    }
+  }
+
+  .cajasIndex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 60px 0px 130px 0px;
   }
 
   .primerSeccion {
     background: $cajas-portada;
-    grid-area: seccionA;
     @include cajasIndex;
-
-    h2 {
-      margin: 2px;
-      padding: 2px;
-    }
+    margin-bottom: 70px;
   }
 
   .segundaSeccion {
     background: $cajas-portada;
-    grid-area: seccionB;
     @include cajasIndex;
+    margin-bottom: 70px;
 
-    h2 {
-      margin: 2px;
-      padding: 2px;
-    }
   }
 
   .terceraSeccion {
     background: $cajas-portada;
-    grid-area: seccionC;
     @include cajasIndex;
-    
-    h2 {
-      margin: 2px;
-      padding: 2px;
-    }
+    margin-bottom: 70px;
+
   }
 }

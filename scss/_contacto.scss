@@ -1,4 +1,4 @@
-.gridPadreContacto {
+.padreContacto {
   background-image: linear-gradient(to bottom, rgb(0, 0, 0), #363636);
   color: whitesmoke;
   .redes {
@@ -7,8 +7,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
-    margin-bottom: 30px;
+    margin-top: 150px;
+    margin-bottom: 70px;
     ul{
       padding-left: 0;
     }
@@ -19,15 +19,16 @@
 
   .formulario {
     margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 20px;
+    margin-bottom: 200px;
+    padding: 40px;
     .tituloForm {
       margin-top: 15px;
       margin-bottom: 35px;
     }
-    .btn-color{
+    .btn{
       background-color:palevioletred;
-      ;
+      margin: 40px 3px 3px 3px;
+      color: white;
     }
   }
 }

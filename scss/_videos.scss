@@ -1,9 +1,55 @@
-.gridPadreGaleria{
+.padreVideos{
     background-image: linear-gradient(to bottom, rgb(0, 0, 0), #363636);
-    .carouselGaleria{
-    height: 80vh;
-    width: 100%;
-}
+
+    .contenedorVideos{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        margin: 10vh 30px 130px 30px;
+        justify-content: space-between;
+        h1{
+            color: palevioletred;
+            margin-top: 10vh;
+            margin-bottom: 100px;
+        }
+        h2{
+            color: palevioletred;
+            font-size: 1.5rem;
+        }
+        h3{
+            font-size: 1rem;
+        }
+
+        .videoOficial{
+            display: flex;
+            flex-direction: row-reverse;
+            margin-bottom: 130px;
+            .tituloVideoOf{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                margin-left: 40px;
+            }
+        }
+        .videoFans{
+            display: flex;
+            flex-direction: row;
+
+            .tituloVideoF{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                margin-right: 40px;
+            }
+            .playF{
+                border: rgb(228, 68, 68) 7px solid;
+            }
+        }
+    }
 }
 
 .videos{
