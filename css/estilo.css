@@ -2,6 +2,12 @@
   background-color: black;
   display: flex;
   flex-direction: column; }
+  .padreIndex .carouselIndex .carousel-caption {
+    background-color: black;
+    opacity: 0.7;
+    border-radius: 30px; }
+  .padreIndex .carouselIndex img {
+    height: 95vh; }
   .padreIndex .carouselIndex h5 {
     color: palevioletred; }
   .padreIndex .cajasIndex {
@@ -16,6 +22,8 @@
     margin-right: 30px;
     margin-left: 30px;
     color: white;
+    border-radius: 30px;
+    border: black;
     margin-bottom: 70px; }
     .padreIndex .primerSeccion h2 {
       color: palevioletred;
@@ -28,6 +36,8 @@
     margin-right: 30px;
     margin-left: 30px;
     color: white;
+    border-radius: 30px;
+    border: black;
     margin-bottom: 70px; }
     .padreIndex .segundaSeccion h2 {
       color: palevioletred;
@@ -40,6 +50,8 @@
     margin-right: 30px;
     margin-left: 30px;
     color: white;
+    border-radius: 30px;
+    border: black;
     margin-bottom: 70px; }
     .padreIndex .terceraSeccion h2 {
       color: palevioletred;
@@ -49,23 +61,26 @@
       padding: 0; }
 
 .gridPadreRanking {
-  background-color: black;
-  display: grid; }
+  background-color: black; }
   .gridPadreRanking .rangos {
     grid-area: rangos;
     width: 100%;
-    height: 90vh; }
+    height: max-content; }
     .gridPadreRanking .rangos h1 {
       color: palevioletred;
-      margin-bottom: 30px; }
+      margin-bottom: 60px; }
+    .gridPadreRanking .rangos img {
+      border: palevioletred 6px solid;
+      border-radius: 30px; }
   .gridPadreRanking .jugadores, .gridPadreRanking .equipos {
     grid-area: jugadores;
+    margin: 50px 30px 130px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 15vh;
-    background-image: linear-gradient(to top, black, #363636);
-    margin-bottom: 10px; }
+    border-radius: 30px;
+    background-image: linear-gradient(to top, black, #363636); }
     .gridPadreRanking .jugadores a, .gridPadreRanking .equipos a {
       color: palevioletred;
       font-size: 20px; }
@@ -94,22 +109,27 @@
     .padreVideos .contenedorVideos .videoOficial {
       display: flex;
       flex-direction: row-reverse;
+      flex-wrap: wrap;
       margin-bottom: 130px; }
       .padreVideos .contenedorVideos .videoOficial .tituloVideoOf {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: center;
-        margin-left: 40px; }
+        margin-left: 40px;
+        margin-right: 20;
+        margin-bottom: 30px; }
     .padreVideos .contenedorVideos .videoFans {
       display: flex;
-      flex-direction: row; }
+      flex-direction: row;
+      flex-wrap: wrap; }
       .padreVideos .contenedorVideos .videoFans .tituloVideoF {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: center;
-        margin-right: 40px; }
+        margin-right: 40px;
+        margin-bottom: 30px; }
       .padreVideos .contenedorVideos .videoFans .playF {
         border: #e44444 7px solid; }
 
@@ -217,23 +237,25 @@ footer {
   align-items: center; }
 
 @media (min-width: 350px) {
+  .padreIndex .carouselIndex img {
+    height: 70vh; }
   .gridPadreRanking {
     display: grid;
-    grid-template-areas: "header header" "rangos rangos" "jugadores jugadores" "equipos equipos" "footer footer";
-    gap: 20px; } }
+    grid-template-areas: "header header" "rangos rangos" "jugadores jugadores" "equipos equipos" "footer footer"; }
+    .gridPadreRanking .rangos {
+      margin-top: 20vh;
+      margin-bottom: 60px; }
+    .gridPadreRanking .jugadores, .gridPadreRanking .equipos {
+      margin-bottom: 30px; }
+    .gridPadreRanking .equipos {
+      margin-bottom: 130px; } }
 
 @media (min-width: 768px) {
+  .padreIndex .carouselIndex img {
+    height: 95vh; }
   .gridPadreRanking {
     display: grid;
-    grid-template-areas: "header header" "nav nav" "rangos rangos" "jugadores equipos" "footer footer";
-    gap: 50px; }
+    grid-template-areas: "header header" "nav nav" "rangos rangos" "jugadores equipos" "footer footer"; }
     .gridPadreRanking .rangos {
-      margin-top: 1px; } }
-
-@media (min-width: 1000px) {
-  .gridPadreRanking {
-    display: grid;
-    grid-template-areas: "header header" "nav nav" "rangos rangos" "jugadores equipos" "footer footer";
-    gap: 50px; }
-    .gridPadreRanking .rangos {
-      margin-top: 1px; } }
+      margin-top: 20vh;
+      margin-bottom: 60px; } }

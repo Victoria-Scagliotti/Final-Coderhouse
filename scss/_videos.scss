@@ -25,6 +25,7 @@
         .videoOficial{
             display: flex;
             flex-direction: row-reverse;
+            flex-wrap: wrap;
             margin-bottom: 130px;
             .tituloVideoOf{
                 display: flex;
@@ -32,11 +33,14 @@
                 justify-content: center;
                 align-content: center;
                 margin-left: 40px;
+                margin-right: 20;
+                margin-bottom: 30px;          
             }
         }
         .videoFans{
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
 
             .tituloVideoF{
                 display: flex;
@@ -44,6 +48,8 @@
                 justify-content: center;
                 align-content: center;
                 margin-right: 40px;
+                margin-bottom: 30px;
+
             }
             .playF{
                 border: rgb(228, 68, 68) 7px solid;

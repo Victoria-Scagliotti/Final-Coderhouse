@@ -4,6 +4,14 @@
   flex-direction: column;
 
   .carouselIndex {
+    .carousel-caption{
+      background-color: black;
+      opacity: 0.7;
+      border-radius: 30px;
+    }
+    img{
+      height: 95vh;
+    }
     h5{
       color: palevioletred;
     }

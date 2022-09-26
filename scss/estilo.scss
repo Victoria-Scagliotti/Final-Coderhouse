@@ -6,104 +6,111 @@
 @import "contacto";
 
 * {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 body {
-    text-align: center;
-    a{
-        text-decoration: none;
-        color: black;
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  header {
+    .navbar {
+      padding-left: 20px;
+      padding-right: 20px;
+      height: 10vh;
     }
-        
-    header{
-        .navbar{
-        padding-left: 20px;
-        padding-right: 20px;
-        height: 10vh;
-        }
-        .botonHamburguesa{
-            width: 40px;
-            height: 30px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .nav-link{
-            color: palevioletred;
-        }
+    .botonHamburguesa {
+      width: 40px;
+      height: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
+    .nav-link {
+      color: palevioletred;
+    }
+  }
 }
-    
+
 @keyframes texto {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 100%;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 
 h2 {
-    animation-name: texto;
-    animation-duration: 2s;
-    animation-iteration-count: initial;
+  animation-name: texto;
+  animation-duration: 2s;
+  animation-iteration-count: initial;
 }
-    
+
 footer {
-    background-color: black;
-    color: white;
-    font-size: 13px;
-    grid-area: footer;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: black;
+  color: white;
+  font-size: 13px;
+  grid-area: footer;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (min-width: 350px){
-    .gridPadreRanking{
-        display: grid;
-        grid-template-areas: 
-        "header header"
-        "rangos rangos"
-        "jugadores jugadores"
-        "equipos equipos"
-        "footer footer";
-        gap: 20px;
-    }
-}
+@media (min-width: 350px) {
 
-@media (min-width:768px) {
-    .gridPadreRanking{
-        display: grid;
-        grid-template-areas: 
-        "header header"
-        "nav nav"
-        "rangos rangos"
-        "jugadores equipos"
-        "footer footer";
-        gap: 50px;
-        .rangos{
-            margin-top: 1px;
+    .padreIndex{
+        .carouselIndex img{
+            height: 70vh;
         }
     }
+  .gridPadreRanking {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "rangos rangos"
+      "jugadores jugadores"
+      "equipos equipos"
+      "footer footer";
+    .rangos {
+      margin-top: 20vh;
+      margin-bottom: 60px;
+      img {
+      }
+    }
+    .jugadores {
+      margin-bottom: 30px;
+    }
+    .equipos {
+      margin-bottom: 130px;
+    }
+  }
 }
 
-@media (min-width:1000px) {
-    .gridPadreRanking{
-        display: grid;
-        grid-template-areas: 
-        "header header"
-        "nav nav"
-        "rangos rangos"
-        "jugadores equipos"
-        "footer footer";
-        gap: 50px;
-        .rangos{
-            margin-top: 1px;
+@media (min-width: 768px) {
+    .padreIndex{
+        .carouselIndex img{
+            height: 95vh;
         }
     }
+
+  .gridPadreRanking {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "rangos rangos"
+      "jugadores equipos"
+      "footer footer";
+    .rangos {
+      margin-top: 20vh;
+      margin-bottom: 60px;
+    }
+  }
 }
