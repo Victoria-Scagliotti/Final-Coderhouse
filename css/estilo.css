@@ -157,11 +157,15 @@
     align-items: center;
     justify-items: center;
     margin: 30px 30px 130px 30px; }
+    .padreImagenes .contenedorImagenes img:hover {
+      width: 20rem; }
     .padreImagenes .contenedorImagenes .card {
       margin: 20px;
       background-color: #ffccf7;
       color: black;
       font-weight: bold; }
+    .padreImagenes .contenedorImagenes .card:hover {
+      overflow: hidden; }
     .padreImagenes .contenedorImagenes .card-img-top {
       height: 600px; }
 
@@ -176,10 +180,17 @@
     align-items: center;
     margin-top: 150px;
     margin-bottom: 70px; }
+    .padreContacto .redes h1 {
+      margin-bottom: 10px; }
     .padreContacto .redes ul {
       padding-left: 0; }
+      .padreContacto .redes ul li {
+        margin: 10px; }
     .padreContacto .redes a {
       color: palevioletred; }
+    .padreContacto .redes a:hover {
+      font-size: 20px;
+      color: #bebebe; }
   .padreContacto .formulario {
     margin-top: 50px;
     margin-bottom: 200px;

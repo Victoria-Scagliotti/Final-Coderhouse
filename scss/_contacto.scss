@@ -9,11 +9,21 @@
     align-items: center;
     margin-top: 150px;
     margin-bottom: 70px;
+    h1{
+      margin-bottom: 10px;
+    }
     ul{
       padding-left: 0;
+      li{
+        margin: 10px;
+      }
     }
     a{
       color:palevioletred;
+    }
+    a:hover{
+      font-size: 20px;
+      color: #bebebe;
     }
   }
 

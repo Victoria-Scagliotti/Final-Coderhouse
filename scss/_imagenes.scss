@@ -16,12 +16,17 @@
     align-items: center;
     justify-items: center;
     margin: 30px 30px 130px 30px;
-
+    img:hover{
+      width: 20rem;
+    }
     .card{
       margin: 20px;
       background-color: rgb(255, 204, 247);
       color: black;
       font-weight: bold;
+    }
+    .card:hover{
+      overflow:hidden;
     }
       .card-img-top{
         height: 600px;
