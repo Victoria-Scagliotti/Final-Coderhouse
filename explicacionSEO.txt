@@ -1,1 +1,0 @@
-Ale, puse en cada uno de los HTML, una etiqueta meta name= description única en cada caso, puse una etiqueta <h1> seguidas de <h2>, cambie <title> para distinguirlas mejor, no agregue Keywords ya que google las ignora.
