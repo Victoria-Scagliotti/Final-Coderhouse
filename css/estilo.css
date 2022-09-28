@@ -89,18 +89,17 @@
 
 .padreVideos {
   background-image: linear-gradient(to bottom, black, #363636); }
+  .padreVideos h1 {
+    color: palevioletred;
+    margin-top: 20vh;
+    margin-bottom: 100px; }
   .padreVideos .contenedorVideos {
     color: white;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: center;
-    margin: 10vh 30px 130px 30px;
-    justify-content: space-between; }
-    .padreVideos .contenedorVideos h1 {
-      color: palevioletred;
-      margin-top: 10vh;
-      margin-bottom: 100px; }
+    align-items: flex-start;
+    margin: 10vh 30px 130px 30px; }
     .padreVideos .contenedorVideos h2 {
       color: palevioletred;
       font-size: 1.5rem; }
@@ -108,40 +107,30 @@
       font-size: 1rem; }
     .padreVideos .contenedorVideos .videoOficial {
       display: flex;
-      flex-direction: row-reverse;
+      flex-direction: column;
       flex-wrap: wrap;
+      width: 100%;
       margin-bottom: 130px; }
       .padreVideos .contenedorVideos .videoOficial .tituloVideoOf {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: center;
-        margin-left: 40px;
-        margin-right: 20;
         margin-bottom: 30px; }
     .padreVideos .contenedorVideos .videoFans {
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap; }
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%; }
       .padreVideos .contenedorVideos .videoFans .tituloVideoF {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: center;
-        margin-right: 40px;
         margin-bottom: 30px; }
       .padreVideos .contenedorVideos .videoFans .playF {
-        border: #e44444 7px solid; }
-
-.videos {
-  grid-area: videos;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: linear-gradient(to left, black, #363636);
-  height: 500px;
-  width: 100%; }
+        border: #e44444 5px solid;
+        padding: 0; }
 
 .padreImagenes {
   background-image: linear-gradient(to bottom, black, #363636); }
