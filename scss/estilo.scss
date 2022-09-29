@@ -35,6 +35,29 @@ body {
       color: palevioletred;
     }
   }
+
+  h1 {
+    animation-name: texto;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+  }
+
+  h2 {
+    animation-name: texto;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+  }
+  
+  footer {
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    grid-area: footer;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @keyframes texto {
@@ -46,22 +69,6 @@ body {
   }
 }
 
-h2 {
-  animation-name: texto;
-  animation-duration: 2s;
-  animation-iteration-count: initial;
-}
-
-footer {
-  background-color: black;
-  color: white;
-  font-size: 13px;
-  grid-area: footer;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 @media (min-width: 350px) {
 
@@ -81,8 +88,6 @@ footer {
     .rangos {
       margin-top: 20vh;
       margin-bottom: 60px;
-      img {
-      }
     }
     .jugadores {
       margin-bottom: 30px;

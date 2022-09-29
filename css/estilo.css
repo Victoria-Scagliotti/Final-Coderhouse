@@ -10,6 +10,12 @@
     height: 95vh; }
   .padreIndex .carouselIndex h5 {
     color: palevioletred; }
+  .padreIndex #tituloIndex {
+    margin-bottom: 20px;
+    margin-top: 10vh;
+    width: 100%; }
+    .padreIndex #tituloIndex h1 {
+      color: palevioletred; }
   .padreIndex .cajasIndex {
     display: flex;
     flex-direction: row;
@@ -214,6 +220,23 @@ body {
     align-items: center; }
   body header .nav-link {
     color: palevioletred; }
+  body h1 {
+    animation-name: texto;
+    animation-duration: 2s;
+    animation-iteration-count: initial; }
+  body h2 {
+    animation-name: texto;
+    animation-duration: 2s;
+    animation-iteration-count: initial; }
+  body footer {
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    grid-area: footer;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 @keyframes texto {
   0% {
@@ -221,31 +244,12 @@ body {
   100% {
     opacity: 100%; } }
 
-h2 {
-  animation-name: texto;
-  animation-duration: 2s;
-  animation-iteration-count: initial; }
-
-footer {
-  background-color: black;
-  color: white;
-  font-size: 13px;
-  grid-area: footer;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
 @media (min-width: 350px) {
   .padreIndex .carouselIndex img {
     height: 70vh; }
   .gridPadreRanking {
     display: grid;
-    grid-template-areas: "header header"
- "rangos rangos"
- "jugadores jugadores"
- "equipos equipos"
- "footer footer"; }
+    grid-template-areas: "header header" "rangos rangos" "jugadores jugadores" "equipos equipos" "footer footer"; }
     .gridPadreRanking .rangos {
       margin-top: 20vh;
       margin-bottom: 60px; }
@@ -259,11 +263,7 @@ footer {
     height: 95vh; }
   .gridPadreRanking {
     display: grid;
-    grid-template-areas: "header header"
- "nav nav"
- "rangos rangos"
- "jugadores equipos"
- "footer footer"; }
+    grid-template-areas: "header header" "nav nav" "rangos rangos" "jugadores equipos" "footer footer"; }
     .gridPadreRanking .rangos {
       margin-top: 20vh;
       margin-bottom: 60px; } }
