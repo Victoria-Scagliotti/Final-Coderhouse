@@ -1,161 +1,196 @@
-.Instagram {
-  color: purple; }
-
-.Facebook {
-  color: blue; }
-
-.Twitter {
-  color: lightblue; }
-
-.Youtube {
-  color: red; }
-
-.Discord {
-  color: violet; }
-
-.portada {
-  background-image: url("../img/principal.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  grid-area: portada;
+.padreIndex {
+  background-color: black;
   display: flex;
-  align-items: flex-end;
-  margin-top: 50px;
-  height: 80vh;
-  width: 100%;
-  font-size: 3rem; }
+  flex-direction: column; }
+  .padreIndex .carouselIndex .carousel-caption {
+    background-color: black;
+    opacity: 0.7;
+    border-radius: 30px; }
+  .padreIndex .carouselIndex img {
+    height: 95vh; }
+  .padreIndex .carouselIndex h5 {
+    color: palevioletred; }
+  .padreIndex .cajasIndex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 60px 0px 130px 0px; }
+  .padreIndex .primerSeccion {
+    background: linear-gradient(to top, black, #363636);
+    margin-right: 30px;
+    margin-left: 30px;
+    color: white;
+    border-radius: 30px;
+    border: black;
+    margin-bottom: 70px; }
+    .padreIndex .primerSeccion h2 {
+      color: palevioletred;
+      margin-bottom: 30px;
+      padding: 2px; }
+    .padreIndex .primerSeccion ul {
+      padding: 0; }
+  .padreIndex .segundaSeccion {
+    background: linear-gradient(to top, black, #363636);
+    margin-right: 30px;
+    margin-left: 30px;
+    color: white;
+    border-radius: 30px;
+    border: black;
+    margin-bottom: 70px; }
+    .padreIndex .segundaSeccion h2 {
+      color: palevioletred;
+      margin-bottom: 30px;
+      padding: 2px; }
+    .padreIndex .segundaSeccion ul {
+      padding: 0; }
+  .padreIndex .terceraSeccion {
+    background: linear-gradient(to top, black, #363636);
+    margin-right: 30px;
+    margin-left: 30px;
+    color: white;
+    border-radius: 30px;
+    border: black;
+    margin-bottom: 70px; }
+    .padreIndex .terceraSeccion h2 {
+      color: palevioletred;
+      margin-bottom: 30px;
+      padding: 2px; }
+    .padreIndex .terceraSeccion ul {
+      padding: 0; }
 
-.primerSeccion {
-  background: linear-gradient(to top, bisque, #e4909a);
-  grid-area: seccionA;
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: #896065 1px solid; }
-  .primerSeccion h2 {
-    margin: 2px;
-    padding: 2px;
-    text-decoration-line: underline; }
+.gridPadreRanking {
+  background-color: black; }
+  .gridPadreRanking .rangos {
+    grid-area: rangos;
+    width: 100%;
+    height: max-content; }
+    .gridPadreRanking .rangos h1 {
+      color: palevioletred;
+      margin-bottom: 60px; }
+    .gridPadreRanking .rangos img {
+      border: palevioletred 6px solid;
+      border-radius: 30px; }
+  .gridPadreRanking .jugadores, .gridPadreRanking .equipos {
+    grid-area: jugadores;
+    margin: 50px 30px 130px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    border-radius: 30px;
+    background-image: linear-gradient(to top, black, #363636); }
+    .gridPadreRanking .jugadores a, .gridPadreRanking .equipos a {
+      color: palevioletred;
+      font-size: 20px; }
+  .gridPadreRanking .equipos {
+    grid-area: equipos; }
 
-.segundaSeccion {
-  background: linear-gradient(to top, bisque, #e4909a);
-  grid-area: seccionB;
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: #896065 1px solid; }
-  .segundaSeccion h2 {
-    margin: 2px;
-    padding: 2px;
-    text-decoration-line: underline; }
+.padreVideos {
+  background-image: linear-gradient(to bottom, black, #363636); }
+  .padreVideos h1 {
+    color: palevioletred;
+    margin-top: 20vh;
+    margin-bottom: 100px; }
+  .padreVideos .contenedorVideos {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 10vh 30px 130px 30px; }
+    .padreVideos .contenedorVideos h2 {
+      color: palevioletred;
+      font-size: 1.5rem; }
+    .padreVideos .contenedorVideos h3 {
+      font-size: 1rem; }
+    .padreVideos .contenedorVideos .videoOficial {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-bottom: 130px; }
+      .padreVideos .contenedorVideos .videoOficial .tituloVideoOf {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 30px; }
+    .padreVideos .contenedorVideos .videoFans {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%; }
+      .padreVideos .contenedorVideos .videoFans .tituloVideoF {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 30px; }
+      .padreVideos .contenedorVideos .videoFans .playF {
+        border: #e44444 5px solid;
+        padding: 0; }
 
-.terceraSeccion {
-  background: linear-gradient(to top, bisque, #e4909a);
-  grid-area: seccionC;
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: #896065 1px solid; }
-  .terceraSeccion h2 {
-    margin: 2px;
-    padding: 2px;
-    text-decoration-line: underline; }
+.padreImagenes {
+  background-image: linear-gradient(to bottom, black, #363636); }
+  .padreImagenes h1 {
+    color: palevioletred;
+    margin-top: 15vh;
+    margin-bottom: 30px; }
+  .padreImagenes .contenedorImagenes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin: 30px 30px 130px 30px; }
+    .padreImagenes .contenedorImagenes img:hover {
+      width: 20rem; }
+    .padreImagenes .contenedorImagenes .card {
+      margin: 20px;
+      background-color: #ffccf7;
+      color: black;
+      font-weight: bold; }
+    .padreImagenes .contenedorImagenes .card:hover {
+      overflow: hidden; }
+    .padreImagenes .contenedorImagenes .card-img-top {
+      height: 600px; }
 
-.rangos {
-  grid-area: rangos;
-  width: 100%;
-  height: fit-content;
-  margin-top: 10%; }
-
-.jugadores {
-  grid-area: jugadores;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: bisque;
-  height: 200px;
-  width: 100%; }
-
-.equipos {
-  grid-area: equipos;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: bisque;
-  height: 200px;
-  width: 100%; }
-
-.menuGaleria {
-  background-image: url(../img/galeria.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  grid-area: menuGaleria;
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  font-size: 2rem;
-  height: 80vh;
-  width: 100%; }
-
-.videos {
-  grid-area: videos;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(to left, bisque, #97b3ff);
-  border: #896065 1px solid;
-  height: 500px;
-  width: 100%; }
-
-.imagenes {
-  grid-area: imagenes;
-  background: linear-gradient(to left, bisque, #97b3ff);
-  border: #896065 1px solid;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: auto;
-  height: 500px; }
-
-.partesMercado {
-  display: flex;
-  margin-top: 30vh;
-  margin-bottom: 20vh;
-  justify-content: center; }
-
-.tecnologia, .indumentaria, .utensillos {
-  border: #896065 1px solid;
-  background: linear-gradient(to top, bisque, #70ccb0);
-  height: 200px; }
-
-.redes {
-  grid-area: redes;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: #896065 3px solid;
-  background-color: #fad0d0;
-  margin-top: 90px;
-  margin-bottom: 30px; }
-
-.formulario {
-  border: #896065 3px solid;
-  background-color: #fad0d0;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding: 20px; }
-
-.tituloForm {
-  margin-top: 15px;
-  margin-bottom: 35px; }
+.padreContacto {
+  background-image: linear-gradient(to bottom, black, #363636);
+  color: whitesmoke; }
+  .padreContacto .redes {
+    grid-area: redes;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 70px; }
+    .padreContacto .redes h1 {
+      margin-bottom: 10px; }
+    .padreContacto .redes ul {
+      padding-left: 0; }
+      .padreContacto .redes ul li {
+        margin: 10px; }
+    .padreContacto .redes a {
+      color: palevioletred; }
+    .padreContacto .redes a:hover {
+      font-size: 20px;
+      color: #bebebe; }
+  .padreContacto .formulario {
+    margin-top: 50px;
+    margin-bottom: 200px;
+    padding: 40px; }
+    .padreContacto .formulario .tituloForm {
+      margin-top: 15px;
+      margin-bottom: 35px; }
+    .padreContacto .formulario .btn {
+      background-color: palevioletred;
+      margin: 40px 3px 3px 3px;
+      color: white; }
 
 * {
   margin: 0;
@@ -164,10 +199,21 @@
 
 body {
   text-align: center; }
-
-a {
-  text-decoration: none;
-  color: black; }
+  body a {
+    text-decoration: none;
+    color: black; }
+  body header .navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 10vh; }
+  body header .botonHamburguesa {
+    width: 40px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  body header .nav-link {
+    color: palevioletred; }
 
 @keyframes texto {
   0% {
@@ -190,32 +236,34 @@ footer {
   justify-content: center;
   align-items: center; }
 
-@media (min-width: 368px) {
-  .gridPadreIndex {
-    display: grid;
-    grid-template-areas: "header header" "portada portada" "seccionA seccionA" "seccionB seccionB" "seccionC seccionC" "footer footer";
-    gap: 20px; }
+@media (min-width: 350px) {
+  .padreIndex .carouselIndex img {
+    height: 70vh; }
   .gridPadreRanking {
     display: grid;
-    grid-template-areas: "header header" "rangos rangos" "jugadores jugadores" "equipos equipos" "footer footer";
-    gap: 20px; }
-  .gridPadreGaleria {
-    display: grid;
-    grid-template-areas: "header header" "menuGaleria menuGaleria" "videos videos" "imagenes imagenes" "footer footer";
-    gap: 20px; } }
-
-@media (min-width: 1024px) {
-  .gridPadreIndex {
-    display: grid;
-    grid-template-areas: "header header header" "nav nav nav" "portada portada portada" "seccionA seccionB seccionC" "footer footer footer";
-    gap: 20px; }
-  .gridPadreRanking {
-    display: grid;
-    grid-template-areas: "header header" "nav nav" "rangos rangos" "jugadores equipos" "footer footer";
-    gap: 50px; }
+    grid-template-areas: "header header"
+ "rangos rangos"
+ "jugadores jugadores"
+ "equipos equipos"
+ "footer footer"; }
     .gridPadreRanking .rangos {
-      margin-top: 1px; }
-  .gridPadreGaleria {
+      margin-top: 20vh;
+      margin-bottom: 60px; }
+    .gridPadreRanking .jugadores, .gridPadreRanking .equipos {
+      margin-bottom: 30px; }
+    .gridPadreRanking .equipos {
+      margin-bottom: 130px; } }
+
+@media (min-width: 768px) {
+  .padreIndex .carouselIndex img {
+    height: 95vh; }
+  .gridPadreRanking {
     display: grid;
-    grid-template-areas: "header header" "nav nav" "menuGaleria menuGaleria" "videos imagenes" "footer footer";
-    gap: 20px; } }
+    grid-template-areas: "header header"
+ "nav nav"
+ "rangos rangos"
+ "jugadores equipos"
+ "footer footer"; }
+    .gridPadreRanking .rangos {
+      margin-top: 20vh;
+      margin-bottom: 60px; } }

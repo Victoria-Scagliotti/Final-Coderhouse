@@ -15,31 +15,50 @@
       rel="stylesheet"
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"/>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../css/estilo.css"/>
   </head>
 
-  <body class="gridPadreContacto container-fluid">
+  <body class="padreContacto">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">NiFanáticos</a>
-        <img src="../img/logo.png" alt="logo" width="50vh" height="50vh">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link" href="../index.html">INICIO</a>
-            <a class="nav-link" href="ranking.html">RANKING</a>
-            <a class="nav-link" href="galeria.html">GALERIA</a>
-            <a class="nav-link" href="mercado.html">MERCADO</a>
-            <a class="nav-link" href="contacto.html">CONTACTO</a>
+    <header>
+      <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html">NI FANÁTICOS</a>
+          <img src="/img/logo.png" alt="logo" width="50vh" height="50vh" />
+          <button class="navbar-toggler botonHamburguesa" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENÚ</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="/index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="ranking.html">Ranking</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="videos.html">Videos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="imagenes.html">Imagenes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
-    <section class="redes">
+    <section class="redes" data-aos="zoom-out" data-aos-duration="1000">
       <h1>Redes Sociales</h1>
       <ul>
         <li>
@@ -67,7 +86,7 @@
       </ul>
     </section>
 
-    <div class="container formulario">
+    <div class="container formulario" data-aos="zoom-out" data-aos-duration="2000">
       <h2 class="tituloForm">HACENOS TU CONSULTA</h2>
       <form action="/action_page.php" class="was-validated">
         <div class="form-group">
@@ -110,8 +129,8 @@
             <div class="invalid-feedback">Casilla no seleccionada.</div>
           </label>
         </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
-        <button type="reset" class="btn btn-primary">Eliminar</button>
+        <button type="submit" class="btn btn-color">Enviar</button>
+        <button type="reset" class="btn btn-color">Eliminar</button>
       </form>
     </div>
 
@@ -123,5 +142,9 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

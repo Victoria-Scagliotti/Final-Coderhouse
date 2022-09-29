@@ -1,0 +1,35 @@
+.padreImagenes {
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0), #363636);
+  
+  h1{
+    color: palevioletred;
+    margin-top: 15vh;
+    margin-bottom: 30px;
+
+  }
+
+  .contenedorImagenes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin: 30px 30px 130px 30px;
+    img:hover{
+      width: 20rem;
+    }
+    .card{
+      margin: 20px;
+      background-color: rgb(255, 204, 247);
+      color: black;
+      font-weight: bold;
+    }
+    .card:hover{
+      overflow:hidden;
+    }
+      .card-img-top{
+        height: 600px;
+      }
+  }
+}

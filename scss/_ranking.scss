@@ -1,26 +1,39 @@
-.rangos{
+.gridPadreRanking {
+  background-color: black;
+  
+  .rangos {
     grid-area: rangos;
     width: 100%;
-    height: fit-content;
-    margin-top: 10%;
-}
-
-.jugadores{
+    height: max-content;
+    h1 {
+      color: palevioletred;
+      margin-bottom: 60px;
+    }
+    img{
+      border: palevioletred 6px solid;
+      border-radius: 30px;
+    }
+  }
+  .jugadores {
     grid-area: jugadores;
+    margin: 50px 30px 130px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $cajas-ranking;
-    height: 200px;
-    width: 100%;
-}
+    height: 15vh;
+    border-radius: 30px;
+    background-image: linear-gradient(to top, rgb(0, 0, 0), #363636);
+    a {
+        color: palevioletred;
+        font-size: 20px;
+    }
+    a:hover{
+      
+    }
+  }
 
-.equipos{
+  .equipos {
     grid-area: equipos;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $cajas-ranking;
-    height: 200px;
-    width: 100%;
+    @extend .jugadores;
+  }
 }

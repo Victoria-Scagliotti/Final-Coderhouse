@@ -1,0 +1,59 @@
+.padreVideos{
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), #363636);
+    h1{
+        color: palevioletred;
+        margin-top: 20vh;
+        margin-bottom: 100px;
+    }
+
+    .contenedorVideos{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin: 10vh 30px 130px 30px;
+        h2{
+            color: palevioletred;
+            font-size: 1.5rem;
+        }
+        h3{
+            font-size: 1rem;
+        }
+
+        .videoOficial{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-bottom: 130px;
+            .tituloVideoOf{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                margin-bottom: 30px;          
+            }
+        }
+        .videoFans{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+
+
+            .tituloVideoF{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                margin-bottom: 30px;
+
+            }
+            .playF{
+                border: rgb(228, 68, 68) 5px solid;
+                padding: 0;
+            }
+        }
+    }
+}

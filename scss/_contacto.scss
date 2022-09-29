@@ -1,24 +1,44 @@
-.redes{
+.padreContacto {
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0), #363636);
+  color: whitesmoke;
+  .redes {
     grid-area: redes;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: #896065 3px solid;
-    background-color: $cajas-contacto;
-    margin-top: 90px;
-    margin-bottom: 30px;
-}
+    margin-top: 150px;
+    margin-bottom: 70px;
+    h1{
+      margin-bottom: 10px;
+    }
+    ul{
+      padding-left: 0;
+      li{
+        margin: 10px;
+      }
+    }
+    a{
+      color:palevioletred;
+    }
+    a:hover{
+      font-size: 20px;
+      color: #bebebe;
+    }
+  }
 
-.formulario{
-    border: #896065 3px solid;
-    background-color: $cajas-contacto;
+  .formulario {
     margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 20px;
-}
-
-.tituloForm{
-    margin-top: 15px;
-    margin-bottom: 35px;
+    margin-bottom: 200px;
+    padding: 40px;
+    .tituloForm {
+      margin-top: 15px;
+      margin-bottom: 35px;
+    }
+    .btn{
+      background-color:palevioletred;
+      margin: 40px 3px 3px 3px;
+      color: white;
+    }
+  }
 }
