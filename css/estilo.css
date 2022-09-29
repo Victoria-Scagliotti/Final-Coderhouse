@@ -86,12 +86,20 @@
     align-items: center;
     height: 15vh;
     border-radius: 30px;
-    background-image: linear-gradient(to top, black, #363636); }
+    background-image: linear-gradient(to top, black, #363636);
+    animation-name: texto;
+    animation-duration: 2s;
+    animation-iteration-count: initial; }
     .gridPadreRanking .jugadores a, .gridPadreRanking .equipos a {
       color: palevioletred;
       font-size: 20px; }
+    .gridPadreRanking .jugadores a:hover, .gridPadreRanking .equipos a:hover {
+      color: white; }
   .gridPadreRanking .equipos {
-    grid-area: equipos; }
+    grid-area: equipos;
+    animation-name: texto;
+    animation-duration: 2s;
+    animation-iteration-count: initial; }
 
 .padreVideos {
   background-image: linear-gradient(to bottom, black, #363636); }
@@ -113,27 +121,28 @@
       font-size: 1rem; }
     .padreVideos .contenedorVideos .videoOficial {
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
       flex-wrap: wrap;
       width: 100%;
-      margin-bottom: 130px; }
+      margin-bottom: 150px; }
       .padreVideos .contenedorVideos .videoOficial .tituloVideoOf {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: center;
-        margin-bottom: 30px; }
+        margin-top: 30px; }
     .padreVideos .contenedorVideos .videoFans {
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
       flex-wrap: wrap;
-      width: 100%; }
+      width: 100%;
+      margin-bottom: 130px; }
       .padreVideos .contenedorVideos .videoFans .tituloVideoF {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: center;
-        margin-bottom: 30px; }
+        margin-top: 30px; }
       .padreVideos .contenedorVideos .videoFans .playF {
         border: #e44444 5px solid;
         padding: 0; }
@@ -223,11 +232,20 @@ body {
   body h1 {
     animation-name: texto;
     animation-duration: 2s;
-    animation-iteration-count: initial; }
+    animation-iteration-count: initial;
+    font-weight: bolder; }
   body h2 {
     animation-name: texto;
     animation-duration: 2s;
-    animation-iteration-count: initial; }
+    animation-iteration-count: initial;
+    font-weight: bold; }
+  body h3 {
+    animation-name: texto;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    font-weight: lighter; }
+  body h5 {
+    font-weight: bolder; }
   body footer {
     background-color: black;
     color: white;

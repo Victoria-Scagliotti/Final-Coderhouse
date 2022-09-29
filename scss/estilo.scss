@@ -40,12 +40,25 @@ body {
     animation-name: texto;
     animation-duration: 2s;
     animation-iteration-count: initial;
+    font-weight: bolder;
   }
 
   h2 {
     animation-name: texto;
     animation-duration: 2s;
     animation-iteration-count: initial;
+    font-weight: bold;
+  }
+
+  h3{
+    animation-name: texto;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    font-weight: lighter;
+  }
+
+  h5{
+    font-weight: bolder;
   }
   
   footer {

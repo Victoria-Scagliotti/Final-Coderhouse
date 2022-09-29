@@ -23,17 +23,23 @@
     height: 15vh;
     border-radius: 30px;
     background-image: linear-gradient(to top, rgb(0, 0, 0), #363636);
+    animation-name: texto;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
     a {
         color: palevioletred;
         font-size: 20px;
     }
     a:hover{
-      
+      color: white;
     }
   }
 
   .equipos {
     grid-area: equipos;
+    animation-name: texto;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
     @extend .jugadores;
   }
 }

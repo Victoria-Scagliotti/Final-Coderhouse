@@ -23,31 +23,32 @@
 
         .videoOficial{
             display: flex;
-            flex-direction: column;
+            flex-direction: column-reverse;
             flex-wrap: wrap;
             width: 100%;
-            margin-bottom: 130px;
+            margin-bottom: 150px;
+            
             .tituloVideoOf{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-content: center;
-                margin-bottom: 30px;          
+                margin-top: 30px;          
             }
         }
         .videoFans{
             display: flex;
-            flex-direction: column;
+            flex-direction: column-reverse;
             flex-wrap: wrap;
             width: 100%;
-
+            margin-bottom: 130px;
 
             .tituloVideoF{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-content: center;
-                margin-bottom: 30px;
+                margin-top: 30px;
 
             }
             .playF{
