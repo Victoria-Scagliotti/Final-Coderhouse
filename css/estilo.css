@@ -173,6 +173,39 @@
     .padreImagenes .contenedorImagenes .card-img-top {
       height: 600px; }
 
+.iconoCarrito {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-right: 80px;
+  margin-top: 20vh; }
+
+.padreMercado {
+  background-image: linear-gradient(to bottom, black, #363636);
+  color: whitesmoke; }
+  .padreMercado .tituloMercado {
+    margin-top: 5vh; }
+    .padreMercado .tituloMercado h1 {
+      color: palevioletred; }
+    .padreMercado .tituloMercado h2 {
+      margin-top: 30px; }
+  .padreMercado .contenedorProductos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 60px 120px 60px; }
+    .padreMercado .contenedorProductos .card {
+      margin: 60px;
+      background-color: palevioletred;
+      border: 3px solid palevioletred; }
+      .padreMercado .contenedorProductos .card .btn {
+        background-color: black;
+        border: black; }
+      .padreMercado .contenedorProductos .card .btn:hover {
+        border: black; }
+
 .padreContacto {
   background-image: linear-gradient(to bottom, black, #363636);
   color: whitesmoke; }

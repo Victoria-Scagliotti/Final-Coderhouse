@@ -1,4 +1,51 @@
-/*let usuarioAutorizado = "Admin"
+//mostrar prod en HTML de forma dinamica
+//agregar prod al carrito
+//evitar la carga de prod repetidos, que se modifique la cantidad
+//mostrar el carrito en el HTML de forma dinamica
+//eliminar prod del carrito
+//calcular total
+//vaciar carrito
+//guardar carro en local storage
+
+class producto{
+    constructor(id, nombre, precio, img){
+        this.id = id;
+        this.nombre = nombre;
+        this.precio = precio;
+        this.img = img;
+        this.cantidad = 1;
+    }
+}
+
+
+const KCbreach = new producto("KBe", "Breach", 2500, "/img/KCbreach.jpg");
+const KCcypher = new producto("KC", "Cypher", 2500, "/img/KCcypher.jpg");
+const KCphoenix = new producto("KP", "Phoenix", 2500, "/img/KCphoenix.jpg");
+const KCsky = new producto("KSk", "Sky", 2500, "/img/KCsky.jpg");
+const KCbrimstone = new producto("Kbs", "Brimstone", 2500, "/img/KCbrim.jpg");
+const KCsage = new producto("KSa", "Sage", 2500, "/img/KCsage.jpg");
+
+
+//array con mi catalogo
+const productos = [KCbreach, KCcypher, KCphoenix, KCsky, KCbrimstone, KCsage];
+
+
+//array carrito
+let carrito = [];
+
+//modificamos DOM
+const contenedorProductos = document.getElementById("contenedorProductos");
+
+//INGRESO EL CODIGO DEL ARTICULO QUE ME INTERESA
+//LA CONSOLA ME TRAE TODO EL OBJETO
+//CONFIRMO QUE ES EL QUE QUIERO
+//INGRESO CANTIDAD
+//QUIERO COMPRAR MAS?
+//CONFIRMO CBA U OTRO LUGAR (DOS CONSTANTES CON LOS COSTOS)
+//TENGO CUPON DE DTO?
+//ME TRAE EL COSTO FINAL
+
+let usuarioAutorizado = "Admin"
 let contraseniaAutorizada = "1234"
 
 let usuario = prompt("Ingrese su usuario: ");
@@ -6,7 +53,7 @@ let usuario = prompt("Ingrese su usuario: ");
 let contrasenia = prompt("Ingrese su contraseña: ");
 
 if (usuario === usuarioAutorizado && contrasenia === contraseniaAutorizada){
-    alert("Bienvenido" + usuario);*/
+    alert("Bienvenido" + usuario);
 
 
 //crear un código para tomar el nombre y la contraseña de una base de datos e ingrese a tu cuenta.
@@ -54,64 +101,5 @@ if (bienvenida) {
 }
 
 else {
-    alert("Que lástima! Esperamos que vuelvas pronto...")
+    alert("Que lástima! Esperamos que vuelvas pronto...");
 }
-
-
-//INGRESO EL CODIGO DEL ARTICULO QUE ME INTERESA
-//LA CONSOLA ME TRAE TODO EL OBJETO
-//CONFIRMO QUE ES EL QUE QUIERO
-//INGRESO CANTIDAD
-//QUIERO COMPRAR MAS?
-//CONFIRMO CBA U OTRO LUGAR (DOS CONSTANTES CON LOS COSTOS)
-//TENGO CUPON DE DTO?
-//ME TRAE EL COSTO FINAL
-
-
-
-//Array de productos
-let productos = [ropa, keycaps, mousepad, figura, cuadro, lampara];
-
-//Objetos de cada producto
-let ropa = {
-    codigo: "R",
-    agente: "Sky",
-    cantidad: 1,
-    precio: 2500
-};
-
-let keycaps = {
-    codigo: "K",
-    agente: "Sova",
-    cantidad: 5,
-    precio: 1000
-};
-
-let mousepad = {
-    codigo: "M",
-    agente: "Viper",
-    tamaño: "XL",
-    precio: 3500
-};
-
-let figura = {
-    codigo: "F",
-    agente: "Jett",
-    cantidad: 1,
-    precio: 5000
-};
-
-let cuadro = {
-    codigo: "C",
-    agente: "Reyna",
-    diseño: "triptico",
-    precio: 5500
-};
-
-let lampara = {
-    codigo: "L",
-    agente: "Breach",
-    watts: 200,
-    precio: 6000
-};
-
