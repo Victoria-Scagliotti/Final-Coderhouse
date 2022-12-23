@@ -1,9 +1,16 @@
-.iconoCarrito{
+.iconos{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    margin-right: 80px;
-    margin-top: 20vh;
+    margin: 20vh 20px 0 20px;
+    button{
+        margin-right: 20px;
+        margin-left: 20px;
+        background-color: palevioletred;
+        padding: 3px;
+        border-radius: 5px;
+    }
+
     
 
 }

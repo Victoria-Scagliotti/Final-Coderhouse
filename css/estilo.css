@@ -173,12 +173,17 @@
     .padreImagenes .contenedorImagenes .card-img-top {
       height: 600px; }
 
-.iconoCarrito {
+.iconos {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  margin-right: 80px;
-  margin-top: 20vh; }
+  margin: 20vh 20px 0 20px; }
+  .iconos button {
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: palevioletred;
+    padding: 3px;
+    border-radius: 5px; }
 
 .padreMercado {
   background-image: linear-gradient(to bottom, black, #363636);
