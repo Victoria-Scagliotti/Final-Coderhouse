@@ -1,31 +1,47 @@
+//constructor de usuarios "REGISTRARSE", invocar cada vez que hacen click en registrarse
+/*class user {
+    constructor (name, pass) {
+        this.name = name.string();
+        this.pass = pass.string();
+    }
+};*/
+
+const user = {
+    name: 'Admin',
+    pass: '1234'
+};
+
+//Hacer array de usuarios (base de datos)
+const users = [];
+
+
 // Bienvenida
-
-let usuarioAutorizado = "Admin"
-let contraseniaAutorizada = "1234"
-
 let welcome = confirm('Hola fanáticos! Están listos para romper el chanchito y llevarse artículos de su shooter favorito?');
 
 if (welcome) {
 
-    let usuario = prompt("Ingrese su nombre de usuario RIOT");
-    console.log(usuario);
+    let enteredUser = prompt("Ingrese su nombre de usuario RIOT");
+    console.log(enteredUser);
     
-    let contrasenia = prompt("Ingrese su contraseña: ");
-    console.log(contrasenia);
-    
-    do{
-        alert('Upss... los datos ingresados no son correctos' + '\n\n' + usuario + '\n' + contrasenia);
-    
-        usuario = prompt("Ingrese de nuevo su nombre de usuario RIOT");
-        console.log(usuario);
+    let enteredPass = prompt("Ingrese su contraseña: ");
+    console.log(enteredPass);
+
+    if (users.find (user => user.name.includes(enteredUser) && user.pass.includes(enteredPass))) {
+        alert("Bienvenido:" + '\n' + enteredUser);
+    } else {
+        do{
+            alert('Upss... los datos ingresados no son correctos' + '\n\n' + enteredUser + '\n' + enteredPass);
         
-        contrasenia = prompt("Ingrese su contraseña: ");
-        console.log(contrasenia);
-        
-    } while (usuario != usuarioAutorizado && contrasenia != contraseniaAutorizada);
-    
-    alert("Bienvenido:" + '\n' + usuario);
-    
+            enteredUser = prompt("Ingrese de nuevo su nombre de usuario RIOT");
+            console.log(enteredUser);
+            
+            enteredPass = prompt("Ingrese su contraseña: ");
+            console.log(enteredPass);
+            
+        } while (user.name != enteredUser && user.pass != enteredPass);
+    }
+
+    //reemplazar por eventos en botones   
     let code = prompt('Ingresá el código de tus keycaps');
     console.log(code);
     
@@ -77,20 +93,78 @@ const keyBrimstone = new product ('Bm', 'Brimstone', 1000, 5);
 const keyPhoenix = new product ('Ph', 'Phoenix', 1000, 5);
 const keyViper = new product ('Vp', 'Viper', 1000, 5);
 
-//array para el carrito, puedo quitar (splice) y agregar productos (push)
+
+// Array para el carrito de compras
 const carrito = [];
+
+
+// Ordenar productos de menor a mayor
+const ordenarMenorMayor = () => {
+    productos.sort((a, b) => a.precio - b.precio)
+    mostrarListaOrdenada()
+};
+
+// Ordenar productos de mayor a menor
+const ordenarMayorMenor = () => {
+    productos.sort((a, b) => b.precio - a.precio)
+    mostrarListaOrdenada()
+};
+
+
+// Agregar productos (push)
 let shop = prompt('Ingresar el código del item que querés comprar:');
 while (shop != "") {
     const addItems = code => carrito.push(shop);
     console.log(carrito);
 };
 
-//dar total bruto
-const total = (price, quantity) => price * quantity;
+//dar total por item
+const totalItem = (price, quantity) => price * quantity;
+
+//dar total compra
+
 
 //analizar descuento
-const totalWithDiscount = (total, discount) => total - discount;
+const totalWithDiscount = (totalShop, discount) => {
+    if (totalShop > 4000) {
+        totalWithDiscount = totalShop - discount;
+        console.log(totalWithDiscount);
+    } else{
+        console.log(totalShop);
+    };
+}
 
 //calcular envio
+switch (key) {
+    case value:
+        
+        break;
+
+    default:
+        break;
+}
 
 //dar precio final
+
+
+
+
+/*Eventos:
+
+//CARTAS KEYBORD
+comprar (crea el objeto en el carro)
+ordenar por orden alfabetico el mercado
+
+//CARRITO
+muestre lo seleccionado
+agregar
+quitar
+contador
+eliminar linea
+boton vaciar carro
+mostrar total por item
+total sin envio ni descuento
+total con descuento
+total con envio
+total final
+boton comprar*/
