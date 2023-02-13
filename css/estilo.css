@@ -173,44 +173,6 @@
     .padreImagenes .contenedorImagenes .card-img-top {
       height: 600px; }
 
-.iconos {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  margin: 20vh 20px 0 20px; }
-  .iconos button {
-    margin-right: 20px;
-    margin-left: 20px;
-    background-color: palevioletred;
-    padding: 3px;
-    border-radius: 5px; }
-
-.padreMercado {
-  background-image: linear-gradient(to bottom, black, #363636);
-  color: whitesmoke; }
-  .padreMercado .tituloMercado {
-    margin-top: 5vh; }
-    .padreMercado .tituloMercado h1 {
-      color: palevioletred; }
-    .padreMercado .tituloMercado h2 {
-      margin-top: 30px; }
-  .padreMercado .contenedorProductos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 100px 60px 120px 60px; }
-    .padreMercado .contenedorProductos .card {
-      margin: 60px;
-      background-color: palevioletred;
-      border: 3px solid palevioletred; }
-      .padreMercado .contenedorProductos .card .btn {
-        background-color: black;
-        border: black; }
-      .padreMercado .contenedorProductos .card .btn:hover {
-        border: black; }
-
 .padreContacto {
   background-image: linear-gradient(to bottom, black, #363636);
   color: whitesmoke; }

@@ -1,0 +1,44 @@
+[
+    {
+        "id": "Br",
+        "nombre": "Breach",
+        "imagen": "../img/KCbreach.jpg",
+        "cantidad": 5,
+        "precio": 1000
+    },
+    {
+        "id": "Cy",
+        "nombre": "Cypher",
+        "imagen": "../img/KCcypher.jpg",
+        "cantidad": 5,
+        "precio": 1000
+    },
+    {
+        "id": "Ph",
+        "nombre": "Phoenix",
+        "imagen": "../img/KCphoenix.jpg",
+        "cantidad": 5,
+        "precio": 1000
+    },
+    {
+        "id": "Sk",
+        "nombre": "Sky",
+        "imagen": "../img/KCsky.jpg",
+        "cantidad": 5,
+        "precio": 1000
+    },
+    {
+        "id": "Bm",
+        "nombre": "Brimstone",
+        "imagen": "../img/KCbrim.jpg",
+        "cantidad": 5,
+        "precio": 1000
+    },
+    {
+        "id": "Om",
+        "nombre": "Omen",
+        "imagen": "../img/KComen.jpg",
+        "cantidad": 5,
+        "precio": 1000
+    }
+]
